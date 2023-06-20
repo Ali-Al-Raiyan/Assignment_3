@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>DOM Query Selector</title>
+  </head>
+  <body>
+    <p class="para" id="para-1">
+      Lorem ipsum dolor sit, amet consectetur adipisicing elit. Et, maxime
+      voluptatum! Accusantium consequuntur ullam, explicabo qui facere id
+      voluptatibus iure exercitationem neque molestias perferendis obcaecati
+      harum, impedit repudiandae optio mollitia?
+    </p>
+
+    <p class="para" id="para-2">
+      Lorem ipsum dolor sit, amet consectetur adipisicing elit. Et, maxime
+      voluptatum! Accusantium consequuntur ullam, explicabo qui facere id
+      voluptatibus iure exercitationem neque molestias perferendis obcaecati
+      harum, impedit repudiandae optio mollitia?
+    </p>
+
+    <p class="para" id="para-3">
+      Lorem ipsum dolor sit, amet consectetur adipisicing elit. Et, maxime
+      voluptatum! Accusantium consequuntur ullam, explicabo qui facere id
+      voluptatibus iure exercitationem neque molestias perferendis obcaecati
+      harum, impedit repudiandae optio mollitia?
+    </p>
+  </body>
+  <script>
+    let nodes = document.querySelectorAll(".para");
+    for (let i = 0; 1 < nodes.length; i++) {
+      nodes[i].style.color = "red";
+    }
+  </script>
+</html>

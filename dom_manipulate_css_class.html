@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>DOM Manipulate CSS Class.</title>
+    <style>
+      .highlight {
+        background-color: yellow;
+      }
+    </style>
+  </head>
+  <body>
+    <p id="para">
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident
+      repudiandae, iusto vel aut sunt optio suscipit sed eligendi qui ab enim
+      tempore officia illo porro recusandae ea quidem, rerum praesentium.
+    </p>
+    <button onclick="dom_manipulate()">Click Me</button>
+    <script>
+      function dom_manipulate() {
+        var element = document.getElementById("para");
+        element.classList.add("highlight");
+      }
+    </script>
+  </body>
+</html>

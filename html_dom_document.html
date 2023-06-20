@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>HTML DOM Document</title>
+  </head>
+  <body>
+    <p id="para">
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus esse
+      perferendis ea! Eos exercitationem excepturi incidunt id, tempore nobis
+      quas sed corporis. Vitae est, officiis voluptatem exercitationem nihil ea
+      voluptas.
+    </p>
+    <button onclick="change_content()">Click Me</button>
+
+    <script>
+      function change_content() {
+        document.getElementById("para").innerText = "Button Clicked";
+      }
+    </script>
+  </body>
+</html>

@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>One To Six Problems Solving</title>
+  </head>
+  <body>
+    <h1>One To Six Problems Solving</h1>
+    <button onclick="open_window_function()">Click Me to Open A Window</button>
+    <script>
+      // -------------------------
+      // ------DATE OBJECT--------
+      // -------------------------
+      function date_object() {
+        // Any Date
+        let new_date = new Date("2023-02-17");
+        console.log("Any Date: ", new_date.toDateString());
+
+        // Current Date
+        let current_date = new Date();
+        console.log("Current Date: ", current_date.toDateString());
+      }
+      // -------------------------
+      // ------MATH OBJECT--------
+      // -------------------------
+      function math_object(input_array) {
+        let sum = 0;
+        for (let i = 0; i < input_array.length; i++) {
+          sum = sum + Math.pow(input_array[i], 2);
+        }
+        console.log(Math.sqrt(sum));
+      }
+      // -------------------------
+      // --------NUMBERS----------
+      // -------------------------
+      function prime_number(n) {
+        let is_prime = true;
+        for (let i = 2; i < n; i++) {
+          if (n % i == 0) {
+            is_prime = false;
+            break;
+          }
+        }
+        return is_prime;
+      }
+      // -------------------------
+      // ------WINDOW OBJECT------
+      // -------------------------
+      function open_window_function() {
+        window.open(
+          "https://www.example.com",
+          "example",
+          "width=800px height=600px"
+        );
+      }
+
+      // -------------------------
+      // ---NAVIGATIOR OBJECT-----
+      // -------------------------
+      function navigator_object() {
+        console.log("Browser Name: ", navigator.appCodeName);
+        console.log("Browser Version: ", navigator.appVersion);
+      }
+
+      // -------------------------
+      // ---GEOLOCATION OBJECT----
+      // -------------------------
+      function current_location() {
+        navigator.geolocation.getCurrentPosition(showPosition);
+
+        function showPosition(position) {
+          console.log(
+            "Current latitude: ",
+            position.coords.latitude,
+            ", ",
+            "Current longitude: ",
+            position.coords.longitude
+          );
+        }
+      }
+
+      //date_object();
+      //math_object([10, 20, 30]);
+      //console.log(prime_number(11));
+      //navigator_object();
+      //current_location();
+    </script>
+  </body>
+</html>

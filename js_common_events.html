@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>JS Common Events</title>
+  </head>
+  <body onkeydown="key_track(event)" onclick="mouse_coordinates(event)">
+    <h1>Mouse click on any where on web page.</h1>
+    <h1>Press Any Key</h1>
+    <h1>Mouse hover on pic</h1>
+    <img
+      id="pic"
+      onmouseover="change_pic()"
+      src="cat.jpg"
+      style="width: 200px; height: 200px"
+    />
+    <script>
+      // -------------------------
+      // -----------7(a)----------
+      // -------------------------
+      function mouse_coordinates(event) {
+        alert(
+          "X Coordinate: " +
+            event.clientX +
+            " and " +
+            "Y Coordinates: " +
+            event.clientY
+        );
+      }
+      // -------------------------
+      // -----------7(b)----------
+      // -------------------------
+      function key_track(event) {
+        alert("Key Pressed: " + event.key);
+      }
+      // -------------------------
+      // -----------7(c)----------
+      // -------------------------
+      function change_pic() {
+        document.getElementById("pic").src = "dog.jpg";
+      }
+    </script>
+  </body>
+</html>
